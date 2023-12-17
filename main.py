@@ -7,13 +7,13 @@ from youtubesearchpython import VideosSearch
 
 
 
-bot = telebot.TeleBot('6600134179:AAGUt1bvS_iuKJUYvZKCZfIDfX6711CaesI')
-client_id = 'ec8ffbd858d04a57ba92e8bad3e618cf'
-client_secret = '4edf9dae8e784272b4c3bdd43e46ec47'
+bot = telebot.TeleBot('...')
+client_id = '...'
+client_secret = '...'
 
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-playlist_id = 'https://open.spotify.com/playlist/1oD0Txed1OzOFlno8kpWNz?si=fa1a416fcc124578'
+playlist_id = '...'
 
 all_tracks = []
 results = sp.playlist_tracks(playlist_id, limit=100)
